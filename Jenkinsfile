@@ -13,12 +13,6 @@ node {
         app = docker.build("juanra027/node-redes-app")
     }
 
-    stage('Test image') {
-        
-        app.inside {
-            echo "Tests passed"
-        }
-    }
 
     stage('Push image') {
         /* 
